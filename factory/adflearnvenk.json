@@ -1,0 +1,9 @@
+{
+	"name": "adflearnvenk",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0370048d-6ac3-4809-8d84-683b718a3fa6",
+		"tenantId": "c837c5d3-9f8a-4698-9737-48f2e21af2ab"
+	}
+}

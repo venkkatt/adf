@@ -1,0 +1,28 @@
+{
+	"name": "tr_ingest_hospital_admission_data",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_github_data",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"sourceRelativeURL": "cloudboxacademy/covid19/tree/main/raw/main/ecdc_data/country_response.csv",
+					"sinkFileName": "country_response.csv"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 24,
+				"startTime": "2023-09-28T16:28:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
